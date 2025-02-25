@@ -1,0 +1,35 @@
+{
+    "name": "prikkprikkprikk/textwfc",
+    "description": "Generate nonsense text using a Wave Function Collapse algorithm.",
+    "type": "project",
+    "scripts": {
+        "test": "vendor/bin/pest; vendor/bin/phpstan analyse"
+    },
+    "require": {
+        "php": "^8.4",
+        "laravel/prompts": "^0.3.5",
+        "symfony/filesystem": "^7.2"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.7",
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^3.11"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Prikkprikkprikk\\Textwfc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jørn Støylen",
+            "email": "jorn@prikkprikkprikk.no"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
